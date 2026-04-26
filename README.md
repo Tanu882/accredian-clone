@@ -54,7 +54,7 @@ It combines **frontend engineering + AI integration** to deliver a smart and int
   </tr>
   <tr>
     <td><img src="Screenshot 2026-04-27 000339.png" width="100%"/></td>
-    <td><img src="public/snapshots/edge.png" width="100%"/></td>
+    <td><img src="Screenshot 2026-04-27 000425.png" width="100%"/></td>
   </tr>
 
   <tr><td colspan="2" height="30"></td></tr>
