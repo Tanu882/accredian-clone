@@ -64,8 +64,8 @@ It combines **frontend engineering + AI integration** to deliver a smart and int
     <td align="center"><b>📚 Course Segmentation</b></td>
   </tr>
   <tr>
-    <td><img src="public/snapshots/domain.png" width="100%"/></td>
-    <td><img src="public/snapshots/courses.png" width="100%"/></td>
+    <td><img src="Screenshot 2026-04-27 000435.png" width="100%"/></td>
+    <td><img src="Screenshot 2026-04-27 000453.png" width="100%"/></td>
   </tr>
 
   <tr><td colspan="2" height="30"></td></tr>
@@ -75,8 +75,8 @@ It combines **frontend engineering + AI integration** to deliver a smart and int
     <td align="center"><b>📞 Contact Modal</b></td>
   </tr>
   <tr>
-    <td><img src="public/snapshots/chatbot.png" width="100%"/></td>
-    <td><img src="public/snapshots/modal.png" width="100%"/></td>
+    <td><img src="Screenshot 2026-04-27 000521.png" width="100%"/></td>
+    <td><img src="Screenshot 2026-04-27 000552.png" width="100%"/></td>
   </tr>
 
 </table>
