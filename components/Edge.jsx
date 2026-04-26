@@ -112,11 +112,13 @@ export default function Edge() {
                 transition={{ delay: index * 0.15 }}
                 className="flex items-start gap-4 relative"
               >
+                
 
                 {/* Circle */}
                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-sm font-semibold z-10">
                   {index + 1}
                 </div>
+
 
                 {/* Card */}
                 <div className="bg-white rounded-lg p-2 shadow-sm border border-gray-100 w-full">
