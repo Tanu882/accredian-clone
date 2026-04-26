@@ -1,13 +1,15 @@
 import Image from "next/image";
-  
+
 export default function Hero() {
   return (
-    <section className="bg-white pt-20 md:pt-24 pb-10 md:pb-16 px-4 sm:px-6 md:px-8">
+    
+    <section className="bg-white pt-20 md:pt-24 pb-7 md:pb-16 px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         
-        <div className="bg-[#eef3f8] rounded-0 md:rounded-3xl shadow-lg px-5 py-0 md:px-10 md:py-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div className="bg-[#eef3f8] rounded-0 md:rounded-3xl shadow-lg px-5 py-0 md:px-10 md:py-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 pb-7">
           
           {/* IMAGE */}
+
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
               src="/hero-section.webp"
