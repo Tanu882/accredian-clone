@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Edge from "../components/Edge";
 import Domain from "../components/Domain";
+import Courses from "../components/Courses";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Partners />
       <Edge />
       <Domain />
+      <Courses />
     </div>
   );
 }
