@@ -6,6 +6,7 @@ import Edge from "../components/Edge";
 import Domain from "../components/Domain";
 import Courses from "../components/Courses";
 import WhoShouldJoin from "@/components/WhoShouldJoin";
+import CATFramework from "@/components/CATFramework";
 
 
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Domain />
       <Courses />
       <WhoShouldJoin/>
+      <CATFramework/>
     </div>
   );
 }
