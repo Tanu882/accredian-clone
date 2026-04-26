@@ -53,7 +53,7 @@ It combines **frontend engineering + AI integration** to deliver a smart and int
     <td align="center"><b>📊 Edge Section</b></td>
   </tr>
   <tr>
-    <td><img src="public/snapshots/hero.png" width="100%"/></td>
+    <td><img src="Screenshot 2026-04-27 000339.png" width="100%"/></td>
     <td><img src="public/snapshots/edge.png" width="100%"/></td>
   </tr>
 
