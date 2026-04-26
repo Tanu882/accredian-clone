@@ -38,7 +38,7 @@ It combines **frontend engineering + AI integration** to deliver a smart and int
 ## 🌐 Live Demo & Repository
 
 - 🔗 **Live Application:**  
-  https://your-project.vercel.app/
+ https://accredian-clone2-goixyuqj1-tanus-projects-ed5bbd88.vercel.app/
 
 - 📂 **GitHub Repository:**  
   https://github.com/your-username/accredian-clone
