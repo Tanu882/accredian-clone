@@ -41,8 +41,7 @@ It combines **frontend engineering + AI integration** to deliver a smart and int
  https://accredian-clone2-goixyuqj1-tanus-projects-ed5bbd88.vercel.app/
 
 - 📂 **GitHub Repository:**  
-  https://github.com/your-username/accredian-clone
-
+https://github.com/Tanu882/accredian-clone/tree/main
 ---
 
 ## 📸 Snapshots
