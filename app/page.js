@@ -7,6 +7,7 @@ import Domain from "../components/Domain";
 import Courses from "../components/Courses";
 import WhoShouldJoin from "@/components/WhoShouldJoin";
 import CATFramework from "@/components/CATFramework";
+import Results from "@/components/Results";
 
 
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Courses />
       <WhoShouldJoin/>
       <CATFramework/>
+      <Results/>
     </div>
   );
 }
