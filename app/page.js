@@ -10,6 +10,8 @@ import CATFramework from "@/components/CATFramework";
 import Results from "@/components/Results";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 
 
@@ -29,6 +31,8 @@ export default function Home() {
       <Results/>
       <FAQ/>
       <CTA/>
+      <Footer/>
+      <Chatbot/>
     </div>
   );
 }
