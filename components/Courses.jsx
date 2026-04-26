@@ -91,7 +91,9 @@ export default function Courses() {
                 </p>
               </div>
 
+
               {/* HOVER LINE */}
+
               <div className="h-[3px] bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
             </motion.div>
           ))}
