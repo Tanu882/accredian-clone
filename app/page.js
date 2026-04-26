@@ -8,6 +8,8 @@ import Courses from "../components/Courses";
 import WhoShouldJoin from "@/components/WhoShouldJoin";
 import CATFramework from "@/components/CATFramework";
 import Results from "@/components/Results";
+import FAQ from "@/components/FAQ";
+import CTA from "@/components/CTA";
 
 
 
@@ -25,6 +27,8 @@ export default function Home() {
       <WhoShouldJoin/>
       <CATFramework/>
       <Results/>
+      <FAQ/>
+      <CTA/>
     </div>
   );
 }
