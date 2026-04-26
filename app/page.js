@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Edge from "../components/Edge";
+import Domain from "../components/Domain";
 
 
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Stats />
       <Partners />
       <Edge />
+      <Domain />
     </div>
   );
 }
