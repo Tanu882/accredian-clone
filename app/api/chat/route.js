@@ -1,7 +1,19 @@
 export async function POST(req) {
   try {
+    // 🔍 Check if ENV variable exists (boolean only, safe)
+    console.log("ENV KEY EXISTS:", !!process.env.OPENROUTER_API_KEY);
+
     const { message } = await req.json();
 
+    // ✅ Validate input
+    if (!message) {
+      return Response.json(
+        { reply: "Message is required" },
+        { status: 400 }
+      );
+    }
+
+    // 🔥 Call OpenRouter API
     const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -13,15 +25,8 @@ export async function POST(req) {
         messages: [
           {
             role: "system",
-            content: `
-            You are an AI assistant for Accredian website.
-
-            Rules:
-            - Give SHORT answers (max 2-3 lines)
-            - Be clear and direct
-            - Avoid long explanations
-            - Focus only on key points
-            `,
+            content:
+              "You are an AI assistant for Accredian website. Give short, clear answers (max 2-3 lines).",
           },
           {
             role: "user",
@@ -31,21 +36,36 @@ export async function POST(req) {
       }),
     });
 
+    // ❌ Handle API failure properly
+    if (!res.ok) {
+      const errorText = await res.text();
+      console.log("❌ OPENROUTER ERROR:", errorText);
+
+      return Response.json(
+        { reply: "API request failed. Check server logs." },
+        { status: 500 }
+      );
+    }
+
     const data = await res.json();
 
-    console.log("OPENROUTER RESPONSE:", data); // 🔥 DEBUG
+    console.log("✅ OPENROUTER RESPONSE:", data);
 
-    // ✅ SAFE PARSE
+    // ✅ Safe parsing
     let reply = "Sorry, I couldn't respond.";
 
-    if (data && data.choices && data.choices.length > 0) {
+    if (data?.choices?.length > 0) {
       reply = data.choices[0].message.content;
     }
 
     return Response.json({ reply });
 
   } catch (error) {
-    console.log("API ERROR:", error);
-    return Response.json({ reply: "Server error" });
+    console.log("🔥 SERVER ERROR:", error);
+
+    return Response.json(
+      { reply: "Server error" },
+      { status: 500 }
+    );
   }
 }
