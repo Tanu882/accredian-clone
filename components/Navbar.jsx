@@ -17,16 +17,21 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 lg:gap-10 text-gray-800 font-semibold text-sm lg:text-[15px]">
-          <li className="text-blue-600 border-b-2 border-blue-600 pb-2 cursor-pointer">
-            Home
+          <li>
+            <a href="#home" className="text-blue-600 border-b-2 border-blue-600 pb-2 cursor-pointer">Home</a>
           </li>
-          <li className="hover:text-blue-600 cursor-pointer">Stats</li>
-          <li className="hover:text-blue-600 cursor-pointer">Clients</li>
-          <li className="hover:text-blue-600 cursor-pointer">Accredian Edge</li>
-          <li className="hover:text-blue-600 cursor-pointer">CAT</li>
-          <li className="hover:text-blue-600 cursor-pointer">How It Works</li>
-          <li className="hover:text-blue-600 cursor-pointer">FAQs</li>
-          <li className="hover:text-blue-600 cursor-pointer">Testimonials</li>
+          <li>
+            <a href="#stats" className="hover:text-blue-600 cursor-pointer">Stats</a></li>
+
+          <li ><a href="#domain" className="hover:text-blue-600 cursor-pointer">Clients</a></li>
+
+          <li ><a href="#edge" className="hover:text-blue-600 cursor-pointer">Accredian Edge</a></li>
+
+          <li><a href="#cat" className="hover:text-blue-600 cursor-pointer">CAT</a></li>
+
+          <li><a href="#results" className="hover:text-blue-600 cursor-pointer">How It Works</a></li>
+
+          <li><a href="#faq" className="hover:text-blue-600 cursor-pointer">FAQs</a></li>
         </ul>
 
         {/* Mobile Button */}

@@ -20,7 +20,7 @@ export default function Domain() {
   ];
 
   return (
-    <section className="bg-white pt-10 md:pt-16 pb-10 md:pb-20 px-4 sm:px-6 md:px-8">
+    <section id="domain" className="bg-white pt-10 md:pt-16 pb-10 md:pb-20 px-4 sm:px-6 md:px-8">
       
       <div className="max-w-7xl mx-auto text-center">
 

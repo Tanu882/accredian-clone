@@ -15,7 +15,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="bg-white py-10 md:py-20 px-4 sm:px-6 md:px-8">
+    <section id="stats" className="bg-white py-10 md:py-20 px-4 sm:px-6 md:px-8">
       
       <div className="max-w-7xl mx-auto text-center">
         

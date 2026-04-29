@@ -52,7 +52,7 @@ export default function FAQ() {
 
   return (
   <>
-    <section className="bg-white py-14 md:py-20 px-4 sm:px-6 md:px-8">
+    <section id="faq" className="bg-white py-14 md:py-20 px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
 
         {/* TITLE */}

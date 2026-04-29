@@ -20,7 +20,7 @@ export default function Results() {
   ];
  
   return (
-    <section className="bg-white py-15 md:py-10 px-4 sm:px-6 md:px-10">
+    <section id="results" className="bg-white py-15 md:py-10 px-4 sm:px-6 md:px-10">
       <div className="max-w-5xl mx-auto text-center">
 
         {/* TITLE */}

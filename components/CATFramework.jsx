@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function CATFramework() {
   return (
-    <section className="bg-gray-50 py-14 md:py-20 px-4 sm:px-6 md:px-8">
+    <section id="cat" className="bg-gray-50 py-14 md:py-20 px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto text-center">
 
         {/* TITLE */}

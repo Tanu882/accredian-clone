@@ -31,7 +31,7 @@ export default function Edge() {
   ];
 
   return (
-    <section className="bg-white pt-6 md:pt-10 pb-16 md:pb-20 px-4 sm:px-6 md:px-8">
+    <section id="edge" className="bg-white pt-6 md:pt-10 pb-16 md:pb-20 px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto text-center">
 
         {/* TITLE */}
