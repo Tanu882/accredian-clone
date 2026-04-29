@@ -178,9 +178,77 @@ https://github.com/Tanu882/accredian-clone/tree/main
 ├── 📁 app/                # Pages & routing (Next.js App Router)
 ├── 📁 components/         # UI Components (Hero, Edge, Domain, Chatbot, etc.)
 ├── 📁 public/             # Images & assets
-├── 📁 app/api/chat/       # AI backend route (Gemini API)
+├── 📁 app/api/chat/       # AI backend route (Open ROUTER API)
 │
 ├── next.config.js
 ├── package.json
-├── .env.local
+├── .env
 └── README.md
+
+```
+---
+
+## ⚙️ Setup Instructions
+
+1. Clone the repository:
+```bash 
+git clone https://github.com/your-username/accredian-clone.git
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+
+3. Add environment variables:
+```bash
+OPENROUTER_API_KEY=your_api_key_here
+```
+
+4. Run the project:
+```bash
+npm run dev
+```
+
+5. Open in browser:
+```bash
+http://localhost:3000
+```
+
+---
+
+## 🧠 Approach Taken
+
+- Broke the UI into reusable components
+- Focused on clean structure and readability
+- Used Tailwind for consistent styling
+- Ensured responsiveness across devices
+- Implemented API routes for backend logic
+- Improved UX with animations, loading states, and feedback
+
+---
+
+## 🤖 AI Usage
+
+AI tools (ChatGPT, etc.) were used for:
+
+- UI structuring and layout planning
+- Debugging issues and fixing errors
+- API integration guidance
+- Enhancing chatbot functionality
+- 🛠️ Manual Improvements:
+- Fixed API errors and model issues
+- Optimized chatbot responses (short & relevant)
+- Improved UI responsiveness manually
+- Designed custom chatbot animation
+- Refactored components for reusability
+
+---
+
+## ⚡ Challenges Faced
+
+- API integration issues (Gemini → switched to OpenRouter)
+- Handling response parsing and errors
+- Making chatbot interactive (voice + typing)
+- Maintaining clean responsive UI
