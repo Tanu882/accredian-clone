@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import { X } from "lucide-react";
+import { useState } from "react";
 
 export default function EnquiryModal({ isOpen, onClose }) {
+
+  const [loading, setLoading] = useState(false);
   if (!isOpen) return null;
 
   return (
@@ -40,7 +43,50 @@ export default function EnquiryModal({ isOpen, onClose }) {
           </div>
 
           {/* FORM */}
-          <form className="space-y-5">
+          <form
+  className="space-y-5"
+  onSubmit={async (e) => {
+    e.preventDefault();
+
+    setLoading(true); // 🔄 start loading
+
+    const formData = {
+      name: e.target[0].value,
+      email: e.target[1].value,
+      phone: e.target[2].value,
+      company: e.target[3].value,
+      domain: e.target[4].value,
+      candidates: e.target[5].value,
+      mode: e.target[6].value,
+      location: e.target[7].value,
+    };
+
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      alert(data.message);
+
+      // ✅ 1. CLEAR FORM
+      e.target.reset();
+
+      // ✅ 2. CLOSE MODAL
+      onClose();
+
+    } catch (error) {
+      alert("Error submitting form");
+    } finally {
+      setLoading(false); // 🔄 stop loading
+    }
+  }}
+>
 
             <input
               type="text"
@@ -96,11 +142,14 @@ export default function EnquiryModal({ isOpen, onClose }) {
 
             {/* SUBMIT */}
             <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-lg mt-4 hover:bg-blue-700 transition"
-            >
-              Submit
-            </button>
+  type="submit"
+  disabled={loading}
+  className={`w-full py-3 rounded-lg mt-4 transition text-white ${
+    loading ? "bg-gray-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"
+  }`}
+>
+  {loading ? "Submitting..." : "Submit"}
+</button>
 
           </form>
 
